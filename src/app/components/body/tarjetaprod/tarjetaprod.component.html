@@ -1,11 +1,11 @@
 <div class="card-columns m-3 animated fadeIn">
-    <div (click)="verProduct(item)" *ngFor="let item of items"  class="card puntero" style="width: 18rem;">
+    <div *ngFor="let item of items"  class="card puntero" style="width: 18rem;">
       <img class="card-img-top" src=".../100px180/" alt="Card image cap">
       <div class="card-body text-center">
         <h5 class="card-title">{{item.name}}</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <button type="button" class="m-1 btn btn-success">Ver detalles</button>
-        <button type="button" class="m-1 btn btn-danger">Comprar</button>
+        <button type="button" class="m-1 btn btn-success" (click)="verProduct(item)">Ver detalles</button>
+        <button type="button" class="m-1 btn btn-danger" (click)="comprar(item)">Comprar</button>
       </div>
     </div>
 </div>

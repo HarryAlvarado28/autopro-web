@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-//import { Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tarjetaprod',
@@ -10,7 +10,7 @@ export class TarjetaprodComponent {
 
   @Input() items: any[] = [];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   verProduct(item: any){
     console.log(item);
@@ -22,8 +22,12 @@ export class TarjetaprodComponent {
     // }else{
     //   product = item.id;
     // }
-    console.log(product);
-    //this.router.navigate(['/product',product]);
+    console.log('product:::: ',product);
+    this.router.navigate(['/product',product]);
+  }
+
+  comprar(item: any){
+    console.log('Comprar: ',item);
   }
 
 }
