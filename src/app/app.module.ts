@@ -12,6 +12,8 @@ import { ProductComponent } from './components/product/product.component';
 import { AboutComponent } from './components/about/about.component';
 
 import { ROUTES } from './app.router';
+import { LoginComponent } from './components/log/login/login.component';
+import { SigninComponent } from './components/log/signin/signin.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ROUTES } from './app.router';
     BodyComponent,
     TarjetaprodComponent,
     ProductComponent,
-    AboutComponent
+    AboutComponent,
+    LoginComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
