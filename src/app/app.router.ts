@@ -6,7 +6,6 @@ import { ProductComponent } from './components/product/product.component';
 import { LoginComponent } from './components/log/login/login.component';
 import { SigninComponent } from './components/log/signin/signin.component';
 
-
 export const ROUTES: Routes = [
   { path: '', component: BodyComponent },
   { path: 'about', component: AboutComponent },
