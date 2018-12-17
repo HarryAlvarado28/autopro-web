@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AutoproService } from '../../services/autopro.service';
 
 @Component({
   selector: 'app-body',
@@ -15,14 +16,19 @@ export class BodyComponent implements OnInit {
     short_name:"nombrecorto"
   };
 
-  constructor() {
+  constructor(private aservice :AutoproService) {
     // console.log(this.test.name);
     // this.items = {
     //   id: 5,
     //   name: "normal",
     //   short_name: "nombrecorto"
     // };
-    console.log(this.newProducts);
+
+    this.aservice.getProduct().subscribe((data: any) => {
+      console.log(data);
+      //this.newProducts = data;
+    });
+    console.log('Log1- in constructor: ', this.newProducts);
   }
 
   ngOnInit() {
@@ -37,8 +43,10 @@ export class BodyComponent implements OnInit {
       { id: 6, name: 'Type', key: 'contentTypeId' },
       { id: 7, name: 'Type > Status', key: ['contentTypeId', 'contentStatusId'] }
     ];
+    //this.newProducts = result;
 
-    this.newProducts = result;
+    console.log('Log2- in OnInit: ', this.newProducts);
+
   }
 
 }
