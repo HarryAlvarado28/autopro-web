@@ -10,11 +10,14 @@
   </div>
   <br>
   <div class="shadow-lg p-3 mb-5 bg-white rounded">
-    <p class="font-italic">Operación: {{ test1.ope }}</p>
+    <p class="font-italic">
+      Operación: {{ test1.ope }}
+      [Técnico asignado: {{ test1.opetec }}]
+    </p>
   </div>
   <br>
   <div class="card bg-light mb-3" style="max-width: 18rem;">
-  <div class="card-header">{{ test1.typeM }}</div>
+  <div class="card-header">Detalles generales</div>
   <div class="card-body">
     <h5 class="card-title">{{ test1.title }}</h5>
     <p class="card-text">{{ test1.description }}</p>

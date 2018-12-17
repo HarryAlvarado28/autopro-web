@@ -16,12 +16,12 @@ export class TrakingComponent {
       description: "El auto movil tiene mucho tiempo sin cambio de aceite, se requiere cambio de aceite",
       fechaEntrega: "12-12-2018",
       ope: "Vertiendo nuevo aceite",
+      opetec: "Jose Antonio Gonzalez",
       process: "En proceso",
-      location: "Sucursal 3, Ave. Coste Este, al Frente del Rey."
+      location: "Sucursal #3, Ave. Costa Norte, al Frente del Rey."
     };
     //this.typeMaintenance = "Cambio de Aceite";
   }
-
 }
 
 interface BodyMaintence {
@@ -30,6 +30,7 @@ interface BodyMaintence {
   description: string;
   fechaEntrega: string;
   ope: string;
+  opetec: string;
   process: string;
   location: string;
 }
