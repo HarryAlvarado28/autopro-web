@@ -20,12 +20,21 @@
           <a class="nav-link disabled" href="#">Disabled</a>
         </li>
       </ul>
-      <div class="form-inline my-2 my-lg-0">
+      <div class="form-inline my-2 my-lg-0" *ngIf="session()">
         <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-        <button type="button" name="button" (click)="login()" class="btn btn-success m-1">Iniciar sesión</button>
-        <button type="button" name="button" (click)="register()" class="btn btn-info m-1">Registrarme</button>
-
+        <button type="button"
+                name="button"
+                (click)="login()"
+                class="btn btn-success m-1"
+                routerLinkActive="active"
+                routerLink="login">Iniciar sesión</button>
+        <button type="button"
+                name="button"
+                (click)="register()"
+                class="btn btn-info m-1"
+                routerLinkActive="active"
+                routerLink="signin">Registrarme</button>
       </div>
     </div>
   </nav>

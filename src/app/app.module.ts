@@ -17,6 +17,7 @@ import { LoginComponent } from './components/log/login/login.component';
 import { SigninComponent } from './components/log/signin/signin.component';
 
 import { AutoproService } from './services/autopro.service';
+import { TrakingComponent } from './components/traking/traking.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AutoproService } from './services/autopro.service';
     ProductComponent,
     AboutComponent,
     LoginComponent,
-    SigninComponent
+    SigninComponent,
+    TrakingComponent
   ],
   imports: [
     BrowserModule,
