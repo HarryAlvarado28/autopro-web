@@ -6,6 +6,7 @@ import { ProductComponent } from './components/product/product.component';
 import { LoginComponent } from './components/log/login/login.component';
 import { SigninComponent } from './components/log/signin/signin.component';
 import { TrakingComponent } from './components/traking/traking.component';
+import { InvetoryComponent } from './components/invetory/invetory.component';
 
 export const ROUTES: Routes = [
   { path: '', component: BodyComponent },
@@ -14,6 +15,7 @@ export const ROUTES: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signin', component: SigninComponent },
   { path: 'tracking', component: TrakingComponent },
+  { path: 'inventory', component: InvetoryComponent },
   { path: '', pathMatch:'full', redirectTo: '' },
   { path: '**',  pathMatch:'full', redirectTo: '' }
 
