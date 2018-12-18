@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-traking',
-  templateUrl: './traking.component.html',
-  styleUrls: ['./traking.component.css']
+  templateUrl: './traking.component.html'
+  //,styleUrls: ['./traking.component.css']
 })
 export class TrakingComponent {
 

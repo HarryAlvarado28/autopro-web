@@ -3,8 +3,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tarjetaprod',
-  templateUrl: './tarjetaprod.component.html',
-  styleUrls: ['./tarjetaprod.component.css']
+  templateUrl: './tarjetaprod.component.html'
+  //,styleUrls: ['./tarjetaprod.component.css']
 })
 export class TarjetaprodComponent {
 
