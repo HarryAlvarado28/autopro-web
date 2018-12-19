@@ -139,25 +139,25 @@ export class AutoproService {
           },
           {
               id: 2,
-              name: 'Premium',
+              nombre: 'Premium',
               tiempo: '1 año',
               description: "Dicha garantia es cubierta por 1 año"
           },
           {
               id: 3,
-              name: 'Premium-Long',
+              nombre: 'Premium-Long',
               tiempo: '2 año',
               description: "Dicha garantia es cubierta por 2 año"
           },
           {
               id: 4,
-              name: 'Premium-Long-X',
+              nombre: 'Premium-Long-X',
               tiempo: '3 año',
               description: "Dicha garantia es cubierta por 3 año"
           },
           {
               id: 5,
-              name: 'Premium-Long-XX',
+              nombre: 'Premium-Long-XX',
               tiempo: '5 año',
               description: "Dicha garantia es cubierta por 5 año"
           }
@@ -208,9 +208,16 @@ export class AutoproService {
           },
           {
           id: 0,
-              nombre: 'Sucursal #1',
+              nombre: 'Sucursal #2',
               pisos: 2,
               area: 'Limpieza',
+              direccion: '',
+          },
+          {
+          id: 0,
+              nombre: 'Sucursal #3',
+              pisos: 2,
+              area: 'Pintura',
               direccion: '',
           }
       ];
