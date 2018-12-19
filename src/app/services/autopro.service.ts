@@ -37,23 +37,33 @@ export class AutoproService {
   //----- TESTING AREA DATA OFFLINE ----------------------
 
   getTestProduct(id :number){
-
-    console.log(this._result);
-    for (let i = 0; i < this._result.length; i++) {
-      console.log("-.-.-.-.-.-.",this._result.map[0]);
-      if (id == this._result['id']) {
-        return this._result[i];
+    console.log(this._resProduct);
+    for (let i = 0; i < this._resProduct.length; i++) {
+      console.log("-.-.-.-.-.-.",this._resProduct.map[0]);
+      if (id == this._resProduct['id']) {
+        return this._resProduct[i];
       }
     }
     return null;
   }
 
-
   getTestProducts(){
-    return this._result;
+    return this._resProduct;
   }
 
-  private _result = [
+  getTestGarantia(){
+    return this._resGarantia;
+  }
+
+  getTestProvider(){
+    return this._resProvider;
+  }
+
+  getTestBodega(){
+    return this._resBodega;
+  }
+
+  private _resProduct = [
         {
         id: 0,
             name: 'Avante Llantas Toyota',
@@ -114,13 +124,104 @@ export class AutoproService {
         },
     ];
 
+  private _resGarantia = [
+          {
+          id: 0,
+              nombre: 'Simple',
+              tiempo: '30 dias',
+              description: "Dicha garantia es cubierta por 30 dias",
+          },
+          {
+              id: 1,
+              nombre: 'Normal',
+              tiempo: '90 dias',
+              description: "Dicha garantia es cubierta por 90 dias"
+          },
+          {
+              id: 2,
+              name: 'Premium',
+              tiempo: '1 año',
+              description: "Dicha garantia es cubierta por 1 año"
+          },
+          {
+              id: 3,
+              name: 'Premium-Long',
+              tiempo: '2 año',
+              description: "Dicha garantia es cubierta por 2 año"
+          },
+          {
+              id: 4,
+              name: 'Premium-Long-X',
+              tiempo: '3 año',
+              description: "Dicha garantia es cubierta por 3 año"
+          },
+          {
+              id: 5,
+              name: 'Premium-Long-XX',
+              tiempo: '5 año',
+              description: "Dicha garantia es cubierta por 5 año"
+          }
+      ];
+
+  private _resProvider = [
+          {
+          id: 0,
+              nombre: 'Turtle Wax',
+              tipo_proveedor: 'Internacional',
+              calidad: 'Bueno',
+              prestigio: 'Bueno',
+              garantia: 2,
+          },
+          {
+          id: 1,
+              nombre: 'Mobil',
+              tipo_proveedor: 'Local',
+              calidad: 'Excelente',
+              prestigio: 'Bueno',
+              garantia: 4,
+          },
+          {
+          id: 2,
+              nombre: 'Misano',
+              tipo_proveedor: 'Internacional',
+              calidad: 'Media',
+              prestigio: 'Media',
+              garantia: 1,
+          },
+          {
+          id: 3,
+              nombre: 'Toyota',
+              tipo_proveedor: 'Internacional',
+              calidad: 'Excelente',
+              prestigio: 'Bueno',
+              garantia: 2,
+          }
+      ];
+
+  private _resBodega = [
+          {
+          id: 0,
+              nombre: 'Sucursal #1',
+              pisos: 3,
+              area: 'Peligro',
+              direccion: '',
+          },
+          {
+          id: 0,
+              nombre: 'Sucursal #1',
+              pisos: 2,
+              area: 'Limpieza',
+              direccion: '',
+          }
+      ];
 
 }
 
-interface EnumServiceItem {
-    id: number;
-    short_description: string;
-    name: string;
-    description: string;
-    urlimg: string
-}
+// --- Modelo de datos para los productos.
+// interface EnumServiceItem {
+//     id: number;
+//     short_description: string;
+//     name: string;
+//     description: string;
+//     urlimg: string
+// }
