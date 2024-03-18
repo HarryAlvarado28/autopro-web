@@ -47,7 +47,7 @@ export class AppComponent {
       price: '$79.99',
       imgUrl: './assets/img/img-Kit-de-luces-LED.jpg',
     },
-    {
+   /* {
       name: 'Sistema de Audio Bluetooth',
       description: 'Sistema de audio para automóvil con conectividad Bluetooth',
       descriptionLong:
@@ -74,8 +74,8 @@ export class AppComponent {
       quantity: 100,
       price: '$69.99',
       imgUrl: './assets/img/img-Sistema-de-navegacion-GPS.jpg',
-    },
-    {
+    },*/
+    /*{
       name: 'Aspiradora Portátil para Auto',
       description: 'Aspiradora de mano para limpiar el interior del automóvil',
       descriptionLong:
@@ -92,7 +92,7 @@ export class AppComponent {
       quantity: 180,
       price: '$14.99',
       imgUrl: './assets/img/img-Sistema-de-navegacion-GPS.jpg',
-    },
+    },*/
     {
       name: 'Funda de Asiento de Cuero',
       description: 'Funda de asiento de cuero sintético para automóvil',
@@ -102,7 +102,7 @@ export class AppComponent {
       price: '$39.99',
       imgUrl: './assets/img/img-Asientos-de-cuero.jpg',
     },
-    {
+    /*{
       name: 'Organizador de Maletero Plegable',
       description:
         'Organizador de maletero plegable para mantener ordenado el espacio de carga',
@@ -111,6 +111,6 @@ export class AppComponent {
       quantity: 100,
       price: '$24.99',
       imgUrl: './assets/img/img-Sistema-de-navegacion-GPS.jpg',
-    },
+    },*/
   ];
 }

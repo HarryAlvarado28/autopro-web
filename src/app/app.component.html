@@ -1,3 +1,9 @@
-<div *ngFor="let product of productosDeAuto">
-  <app-product [product]="product"></app-product>
+<div style="text-align: center; margin: 50px">
+  <h1>Auto Store</h1>
+</div>
+
+<div style="text-align: -webkit-center;">
+  <div *ngFor="let product of productosDeAuto">
+    <app-product [product]="product"></app-product>
+  </div>
 </div>
